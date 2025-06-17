@@ -10,18 +10,18 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
-    PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
+    SESSION_ID: process.env.SESSION_ID || "SUBZERO-MD~yiJbOcHZUAW6vyK7289z",  // Your bot's session ID (keep it secure)
+    PREFIX: getConfig("PREFIX") || "+",  // Command prefix (e.g., "., / ! * - +")
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "SUBZERO-MD",  // Bot's display name
-    MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
+    MODE: getConfig("MODE") || process.env.MODE || "private",        // Bot mode: public/private/group/inbox
     REPO: process.env.REPO || "https://github.com/mrfrankofcc/SUBZERO-MD",  // Bot's GitHub repo
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "263719647303",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "Mr Frank",           // Owner's name
-    DEV: process.env.DEV || "263719647303",                     // Developer's contact number
-    DEVELOPER_NUMBER: '263719647303@s.whatsapp.net',            // Developer's WhatsApp ID
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "22395064497",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "𝜇𝛼𝜆𝜄𝜀𝜈_𝛿𝜀𝜈ッ",           // Owner's name
+    DEV: process.env.DEV || "22547869771",                     // Developer's contact number
+    DEVELOPER_NUMBER: '22395064497@s.whatsapp.net',            // Developer's WhatsApp ID
 
     // ===== AUTO-RESPONSE SETTINGS =====
     AUTO_REPLY: process.env.AUTO_REPLY || "false",              // Enable/disable auto-reply
@@ -45,24 +45,24 @@ module.exports = {
     BOT_IMAGE: getConfig("BOT_IMAGE") || "https://files.catbox.moe/qla34k.jpg",  // Bot's "alive" image
 
     // ===== SECURITY & ANTI-FEATURES =====
-    ANTI_DELETE: process.env.ANTI_DELETE || "true",
-    ANTI_CALL: process.env.ANTI_CALL || "true",
+    ANTI_DELETE: process.env.ANTI_DELETE || "false",
+    ANTI_CALL: process.env.ANTI_CALL || "false",
     ANTI_BAD: process.env.ANTI_BAD || "false",                  // Block bad words?
-    ANTI_LINK: process.env.ANTI_LINK || "true",                 // Block links in groups?
-    ANTI_VV: process.env.ANTI_VV || "true",                     // Block view-once messages?
-    DELETE_LINKS: process.env.DELETE_LINKS || "true",          // Auto-delete links?
+    ANTI_LINK: process.env.ANTI_LINK || "false",                 // Block links in groups?
+    ANTI_VV: process.env.ANTI_VV || "false",                     // Block view-once messages?
+    DELETE_LINKS: process.env.DELETE_LINKS || "false",          // Auto-delete links?
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox",          // Log deleted messages (or 'same' to resend)
-    ANTI_BOT: process.env.ANTI_BOT || "true",
-    PM_BLOCKER: process.env.PM_BLOCKER || "true",
+    ANTI_BOT: process.env.ANTI_BOT || "false",
+    PM_BLOCKER: process.env.PM_BLOCKER || "false",
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
     FOOTER: process.env.FOOTER || "*© Gᴇɴᴇʀᴀᴛᴇᴅ ʙʏ Sᴜʙᴢᴇʀᴏ*",  // Bot description
-    PUBLIC_MODE: process.env.PUBLIC_MODE || "true",              // Allow public commands?
-    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",        // Show bot as always online?
-    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
-    AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
+    PUBLIC_MODE: process.env.PUBLIC_MODE || "false",              // Allow public commands?
+    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",        // Show bot as always online?
+    AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false", // React to status updates?
+    AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "false", // VIEW to status updates?
     AUTO_BIO: process.env.AUTO_BIO || "false",
     WELCOME_GOODBYE: process.env.WELCOME_GOODBYE || "false",
-    AMDIN_EVENTS: process.env.ADMIN_EVENTS || "true",
+    AMDIN_EVENTS: process.env.ADMIN_EVENTS || "false",
 };
 
